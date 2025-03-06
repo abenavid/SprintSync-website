@@ -5,49 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprint Sync AI | AI-Powered Agile Automation</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
-        header { background: #007bff; color: white; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; }
-        .hero { text-align: center; padding: 60px 20px; background: white; }
-        .hero h1 { font-size: 42px; margin-bottom: 20px; }
-        .hero p { font-size: 20px; max-width: 700px; margin: 0 auto; color: #666; }
-        .cta-button { background: #007bff; color: white; padding: 15px 25px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 20px; font-size: 18px; }
-        .features { display: flex; flex-wrap: wrap; justify-content: center; padding: 50px 20px; background: #fff; }
-        .feature-box { max-width: 300px; padding: 20px; margin: 20px; text-align: center; background: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .feature-box h3 { font-size: 22px; margin-bottom: 10px; }
-        .feature-box p { font-size: 16px; color: #666; }
-        .visual { text-align: center; padding: 40px 20px; }
-        .visual img { max-width: 80%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .testimonials { padding: 50px 20px; background: #f4f4f4; text-align: center; }
-        .testimonials h2 { font-size: 28px; margin-bottom: 20px; }
-        .testimonial { max-width: 600px; margin: 0 auto 20px; font-style: italic; color: #555; }
-        .signup { text-align: center; padding: 60px 20px; background: #007bff; color: white; }
-        .signup h2 { font-size: 32px; margin-bottom: 10px; }
+        /* General Styles */
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #0E0E0E; color: #fff; }
+        a { text-decoration: none; }
+        
+        /* Navbar */
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #121212; }
+        .logo { font-size: 24px; font-weight: bold; color: #fff; }
+        .menu a { margin-left: 20px; color: #ccc; font-size: 16px; transition: 0.3s; }
+        .menu a:hover { color: #fff; }
+
+        /* Hero Section */
+        .hero { text-align: center; padding: 120px 20px; }
+        .hero h1 { font-size: 48px; max-width: 800px; margin: 0 auto; color: #fff; }
+        .hero p { font-size: 20px; max-width: 600px; margin: 20px auto; color: #aaa; }
+        .cta-button { display: inline-block; background: #007bff; padding: 15px 30px; font-size: 18px; border-radius: 8px; color: #fff; margin-top: 20px; transition: 0.3s; }
+        .cta-button:hover { background: #0056b3; }
+
+        /* Feature Section */
+        .features { display: flex; flex-wrap: wrap; justify-content: center; padding: 80px 20px; }
+        .feature-box { max-width: 300px; padding: 20px; margin: 20px; text-align: center; background: #181818; border-radius: 10px; box-shadow: 0 4px 8px rgba(255,255,255,0.1); }
+        .feature-box h3 { font-size: 22px; margin-bottom: 10px; color: #fff; }
+        .feature-box p { font-size: 16px; color: #aaa; }
+
+        /* Visual Sections */
+        .visual { text-align: center; padding: 80px 20px; }
+        .visual img { max-width: 80%; border-radius: 10px; box-shadow: 0 4px 8px rgba(255,255,255,0.1); }
+
+        /* Testimonials */
+        .testimonials { padding: 80px 20px; text-align: center; background: #121212; }
+        .testimonials h2 { font-size: 28px; margin-bottom: 20px; color: #fff; }
+        .testimonial { max-width: 600px; margin: 0 auto 20px; font-style: italic; color: #bbb; }
+
+        /* Signup Section */
+        .signup { text-align: center; padding: 80px 20px; background: #007bff; }
+        .signup h2 { font-size: 32px; margin-bottom: 10px; color: #fff; }
         .signup form { margin-top: 20px; }
-        .signup input { padding: 10px; width: 250px; border: none; border-radius: 5px; margin-right: 10px; }
-        .signup button { padding: 10px 20px; border: none; background: white; color: #007bff; font-size: 18px; cursor: pointer; border-radius: 5px; }
+        .signup input { padding: 12px; width: 280px; border: none; border-radius: 5px; margin-right: 10px; font-size: 16px; }
+        .signup button { padding: 12px 20px; border: none; background: white; color: #007bff; font-size: 18px; cursor: pointer; border-radius: 5px; }
+
     </style>
 </head>
 <body>
 
-    <header>
-        Sprint Sync AI – AI-Powered Agile Automation
-    </header>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Sprint Sync AI</div>
+        <div class="menu">
+            <a href="#">Features</a>
+            <a href="#">How It Works</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
 
+    <!-- Hero Section -->
     <div class="hero">
-        <h1>AI-Driven Agile, Automated</h1>
-        <p>Instantly generate epics, user stories, and tasks with AI. Sprint Sync AI helps Agile teams move faster, work smarter, and plan with precision.</p>
+        <h1>AI-Powered Agile. Automate Your Sprint Planning.</h1>
+        <p>Turn a single sentence into structured Agile work items with AI. Sprint Sync AI automates backlog creation, story writing, and sprint management.</p>
         <a href="#" class="cta-button">Join Early Access – Limited Spots</a>
     </div>
 
+    <!-- AI Workflow Diagram -->
     <div class="visual">
-        <h2>How Sprint Sync AI Fits Into Your Workflow</h2>
+        <h2>How Sprint Sync AI Works</h2>
         <img src="your-uploaded-image-1.png" alt="Sprint Sync AI Workflow Diagram">
         <p>AI automates backlog creation, sprint planning, and task refinement, reducing manual effort and increasing efficiency.</p>
     </div>
 
+    <!-- Features -->
     <div class="features">
         <div class="feature-box">
-            <h3>🚀 AI-Powered Epics & Stories</h3>
+            <h3>🚀 AI-Generated Epics</h3>
             <p>Turn a single sentence into structured Agile work items.</p>
         </div>
         <div class="feature-box">
@@ -60,6 +89,7 @@
         </div>
     </div>
 
+    <!-- Before & After Comparison -->
     <div class="visual">
         <h2>Before & After Sprint Sync AI</h2>
         <img src="your-uploaded-image-2.png" alt="Before and After Productivity">
@@ -67,14 +97,16 @@
         ✅ After: AI **automates story creation in seconds**, saving hours per sprint.</p>
     </div>
 
+    <!-- Testimonials -->
     <div class="testimonials">
         <h2>What Agile Teams Are Saying</h2>
         <p class="testimonial">"Sprint Sync AI has saved us hours every sprint. Our backlog practically writes itself!" - Agile Coach</p>
         <p class="testimonial">"AI-powered task generation is a game-changer. Productivity has skyrocketed." - Product Manager</p>
     </div>
 
+    <!-- Signup Section -->
     <div class="signup">
-        <h2>Start Automating Your Agile Process</h2>
+        <h2>Get Early Access</h2>
         <form action="https://tally.so/r/n9do3J" method="POST">
             <input type="email" name="email" placeholder="Enter your email" required>
             <button type="submit">Join the Waitlist</button>
