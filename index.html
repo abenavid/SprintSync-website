@@ -6,57 +6,185 @@
     <title>Sprint Sync AI | AI-Powered Agile Automation</title>
     <style>
         /* General Styles */
-        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #0E0E0E; color: #fff; }
-        a { text-decoration: none; }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0E0E0E;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
 
         /* Navbar */
-        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #121212; }
-        .logo { font-size: 24px; font-weight: bold; color: #fff; }
-        .menu a { margin-left: 20px; color: #ccc; font-size: 16px; transition: 0.3s; }
-        .menu a:hover { color: #fff; }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #121212;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .menu a {
+            margin-left: 20px;
+            color: #ccc;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .menu a:hover {
+            color: #fff;
+        }
 
         /* Hero Section */
-        .hero { text-align: center; padding: 120px 20px; }
-        .hero h1 { font-size: 48px; max-width: 800px; margin: 0 auto; color: #fff; }
-        .hero p { font-size: 20px; max-width: 600px; margin: 20px auto; color: #aaa; }
-        .cta-button { display: inline-block; background: #007bff; padding: 15px 30px; font-size: 18px; border-radius: 8px; color: #fff; margin-top: 20px; transition: 0.3s; }
-        .cta-button:hover { background: #0056b3; }
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #fff;
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            color: #aaa;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #007bff;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            color: #fff;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background: #0056b3;
+        }
 
         /* Trusted By Section */
-        .trusted { text-align: center; background: #121212; padding: 40px 0; }
-        .trusted p { font-size: 18px; color: #bbb; margin-bottom: 20px; }
-        .logo-container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+        .trusted {
+            text-align: center;
+            background: #121212;
+            padding: 40px 0;
+        }
+        .trusted p {
+            font-size: 18px;
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
         .logo-container img {
             height: 40px;
-            opacity: 0.7;
+            opacity: 1;
             transition: 0.3s;
             background-color: #2a2a2a;
-            padding: 5px; /* Add spacing around the logo */
-            border-radius: 5px; /* Rounded corners for a smoother look */
+            padding: 8px;
+            border-radius: 6px;
         }
-        .logo-container img:hover { opacity: 1; }
 
-        /* Feature Section */
-        .features { display: flex; flex-wrap: wrap; justify-conent: center; padding: 80px 20px; }
-        .feature-box { max-width: 300px; padding: 20px; margin: 20px; text-align: center; background: #181818; border-radius: 10px; box-shadow: 0 4px 8px rgba(255,255,255,0.1); }
-        .feature-box h3 { font-size: 22px; margin-bottom: 10px; color: #fff; }
-        .feature-box p { font-size: 16px; color: #aaa; }
+        /* Features Section */
+        .features {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .feature-box {
+            max-width: 300px;
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            background: #181818;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+        }
+        .feature-box h3 {
+            font-size: 22px;
+            color: #fff;
+        }
+        .feature-box p {
+            font-size: 16px;
+            color: #aaa;
+        }
 
-        /* Visual Sections */
-        .visual { text-align: center; padding: 80px 20px; }
-        .visual img { max-width: 80%; border-radius: 10px; box-shadow: 0 4px 8px rgba(255,255,255,0.1); }
+        /* How It Works Section */
+        .visual {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .visual img {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+        }
 
         /* Testimonials */
-        .testimonials { padding: 80px 20px; text-align: center; background: #121212; }
-        .testimonials h2 { font-size: 28px; margin-bottom: 20px; color: #fff; }
-        .testimonial { max-width: 600px; margin: 0 auto 20px; font-style: italic; color: #bbb; }
+        .testimonials {
+            text-align: center;
+            background: #121212;
+            padding: 80px 20px;
+        }
+        .testimonials h2 {
+            font-size: 28px;
+            color: #fff;
+        }
+        .testimonial {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            font-style: italic;
+            color: #bbb;
+        }
 
         /* Signup Section */
-        .signup { text-align: center; padding: 80px 20px; background: #007bff; }
-        .signup h2 { font-size: 32px; margin-bottom: 10px; color: #fff; }
-        .signup form { margin-top: 20px; }
-        .signup input { padding: 12px; width: 280px; border: none; border-radius: 5px; margin-right: 10px; font-size: 16px; }
-        .signup button { padding: 12px 20px; border: none; background: white; color: #007bff; font-size: 18px; cursor: pointer; border-radius: 5px; }
+        .signup {
+            text-align: center;
+            padding: 80px 20px;
+            background: #007bff;
+        }
+        .signup h2 {
+            font-size: 32px;
+            color: #fff;
+        }
+        .signup form {
+            margin-top: 20px;
+        }
+        .signup input {
+            padding: 12px;
+            width: 280px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        .signup button {
+            padding: 12px 20px;
+            border: none;
+            background: white;
+            color: #007bff;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
 
     </style>
 </head>
@@ -66,10 +194,10 @@
     <div class="navbar">
         <div class="logo">Sprint Sync AI</div>
         <div class="menu">
-            <a href="#">Features</a>
-            <a href="#">How It Works</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Sign Up</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#signup">Sign Up</a>
         </div>
     </div>
 
@@ -77,7 +205,7 @@
     <div class="hero">
         <h1>AI-Powered Agile. Automate Your Sprint Planning.</h1>
         <p>Turn a single sentence into structured Agile work items with AI. Sprint Sync AI automates backlog creation, story writing, and sprint management.</p>
-        <a href="#" class="cta-button">Join Early Access – Limited Spots</a>
+        <a href="#signup" class="cta-button">Join Early Access – Limited Spots</a>
     </div>
 
     <!-- Trusted By Section -->
@@ -92,52 +220,31 @@
         </div>
     </div>
 
-    <!-- AI Workflow Diagram -->
-    <div class="visual">
-        <h2>How Sprint Sync AI Works</h2>
-        <img src="your-uploaded-image-1.png" alt="Sprint Sync AI Workflow Diagram">
-        <p>
-            🚀 <strong>Save Time:</strong> Reduce hours of manual backlog writing into seconds.<br>
-            ⚡ <strong>Get Structured Agile Items:</strong> AI ensures your stories follow best practices.<br>
-            🔗 <strong>Integrate Seamlessly:</strong> Directly sync AI-generated tasks with Jira, Azure DevOps, and Trello.<br>
-            🏆 <strong>Deliver Faster:</strong> Automate planning and focus on execution.
-        </p>
+    <!-- Features Section -->
+    <div id="features" class="features">
+        <h2>🚀 Key Features</h2>
+        <div class="feature-box"><h3>🔄 AI-Generated Epics</h3><p>Convert a single sentence into structured Agile work items.</p></div>
+        <div class="feature-box"><h3>🔗 Seamless Integration</h3><p>Sync directly with Jira, Azure DevOps, and Trello.</p></div>
+        <div class="feature-box"><h3>📊 Smart Prioritization</h3><p>AI ranks tasks based on urgency and dependencies.</p></div>
     </div>
 
-    <!-- Features -->
-    <div class="features">
-        <div class="feature-box">
-            <h3>🚀 AI-Generated Epics</h3>
-            <p>Turn a single sentence into structured Agile work items.</p>
-        </div>
-        <div class="feature-box">
-            <h3>🔗 Seamless Jira & ADO Integration</h3>
-            <p>Automatically sync AI-generated tasks with your project management tools.</p>
-        </div>
-        <div class="feature-box">
-            <h3>⚡ Smart Task Prioritization</h3>
-            <p>AI ranks tasks based on urgency, dependencies, and team workload.</p>
-        </div>
+    <!-- How It Works Section -->
+    <div id="how-it-works" class="visual">
+        <h2>📌 How Sprint Sync AI Works</h2>
+        <p>With just a sentence, Sprint Sync AI creates full Agile stories and backlog items.</p>
+        <img src="how-it-works.png" alt="Sprint Sync AI Workflow">
     </div>
 
-    <!-- Before & After Comparison -->
-    <div class="visual">
-        <h2>Before & After Sprint Sync AI</h2>
-        <img src="your-uploaded-image-2.png" alt="Before and After Productivity">
-        <p>🔻 Before: Teams spend **3+ hours manually writing stories**  
-        ✅ After: AI **automates story creation in seconds**, saving hours per sprint.</p>
-    </div>
-
-    <!-- Testimonials -->
-    <div class="testimonials">
-        <h2>What Agile Teams Are Saying</h2>
-        <p class="testimonial">"Sprint Sync AI has saved us hours every sprint. Our backlog practically writes itself!" - Agile Coach</p>
-        <p class="testimonial">"AI-powered task generation is a game-changer. Productivity has skyrocketed." - Product Manager</p>
+    <!-- Testimonials Section -->
+    <div id="testimonials" class="testimonials">
+        <h2>🌟 What Our Users Say</h2>
+        <p class="testimonial">"Sprint Sync AI saves us hours every sprint!" - Agile Coach</p>
+        <p class="testimonial">"Productivity has skyrocketed." - Product Manager</p>
     </div>
 
     <!-- Signup Section -->
-    <div class="signup">
-        <h2>Get Early Access</h2>
+    <div id="signup" class="signup">
+        <h2>Join Sprint Sync AI</h2>
         <form action="https://tally.so/r/n9do3J" method="POST">
             <input type="email" name="email" placeholder="Enter your email" required>
             <button type="submit">Join the Waitlist</button>
