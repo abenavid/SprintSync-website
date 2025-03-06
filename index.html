@@ -8,7 +8,7 @@
         /* General Styles */
         body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #0E0E0E; color: #fff; }
         a { text-decoration: none; }
-        
+
         /* Navbar */
         .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 50px; background: #121212; }
         .logo { font-size: 24px; font-weight: bold; color: #fff; }
@@ -21,6 +21,13 @@
         .hero p { font-size: 20px; max-width: 600px; margin: 20px auto; color: #aaa; }
         .cta-button { display: inline-block; background: #007bff; padding: 15px 30px; font-size: 18px; border-radius: 8px; color: #fff; margin-top: 20px; transition: 0.3s; }
         .cta-button:hover { background: #0056b3; }
+
+        /* Trusted By Section */
+        .trusted { text-align: center; background: #121212; padding: 40px 0; }
+        .trusted p { font-size: 18px; color: #bbb; margin-bottom: 20px; }
+        .logo-container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+        .logo-container img { height: 40px; opacity: 0.7; transition: 0.3s; }
+        .logo-container img:hover { opacity: 1; }
 
         /* Feature Section */
         .features { display: flex; flex-wrap: wrap; justify-content: center; padding: 80px 20px; }
@@ -64,6 +71,18 @@
         <h1>AI-Powered Agile. Automate Your Sprint Planning.</h1>
         <p>Turn a single sentence into structured Agile work items with AI. Sprint Sync AI automates backlog creation, story writing, and sprint management.</p>
         <a href="#" class="cta-button">Join Early Access – Limited Spots</a>
+    </div>
+
+    <!-- Trusted By Section -->
+    <div class="trusted">
+        <p>★★★★★ Trusted by top companies</p>
+        <div class="logo-container">
+            <img src="jira-logo.png" alt="Jira">
+            <img src="azure-devops-logo.png" alt="Azure DevOps">
+            <img src="trello-logo.png" alt="Trello">
+            <img src="asana-logo.png" alt="Asana">
+            <img src="github-logo.png" alt="GitHub">
+        </div>
     </div>
 
     <!-- AI Workflow Diagram -->
